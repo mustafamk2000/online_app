@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/layout"
+    tools:context="com.example.ham.mkbook.send_posts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="64dp"
+                android:id="@+id/Done_two"
+                android:layout_gravity="right"
+                android:onClick="Done"
+                android:visibility="visible"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/send_style"
+                android:layout_height="64dp" />
+
+
+            <EditText
+                android:id="@+id/enter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="أدخل النص "
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:onClick="choose_image"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="اختيار الصورة"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+            <ImageView
+                android:id="@+id/image_view_Enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/de"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
